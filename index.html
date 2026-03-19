@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crud Gastos</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="header">
+            <h1 class="titulo-principal"> Gastos </h1>
+        </header>
+
+        <section class="resumo-financeiro" id="resumo-financeiro">
+
+            <div class="receit" id="receita">
+                <h2>Receita</h2>
+                <p id="receita-valor"> <span> R$ 0,00 </span> </p>
+            </div>
+
+            <div class="receit" id="despesas">
+                <h2>Despesas</h2>
+                <p id="despesas-valor"> <span> R$ 0,00 </span> </p>
+            </div>
+
+            <div class="receit" id="saldo">
+                <h2>Saldo</h2>
+                <p id="saldo-valor"> <span> R$ 0,00 </span></p>
+            </div>
+
+        </section>
+
+        <section id="transacoes">
+
+            <div class="painel">
+                <div class="painel-transacoes">
+                    <h3> TRANSAÇÕES </h3>
+
+                    <div class="btn">
+                        <button id="btn-2"> Receitas </button>
+                        <button id="btn-3"> Despesas </button>
+                        <button id="btn-4"> Todas </button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="painel-nova-transacao">
+
+                    <h3> Nova Transação </h3>
+
+                    <div class="receita-despesas">
+
+                        <h4> TIPO </h4>
+                        <div class="btn-despesas-receitas">
+                            <button id="btn-5"> Receitas </button>
+                            <button id="btn-6"> Despesas </button>
+                        </div>
+                    </div>
+
+                    <div class="formulario">
+
+                        <div class="campo-1">
+                            <h4> DESCRIÇÃO </h4>
+
+                            <input type="text" id="descricao" placeholder="Ex: Mercado, Sálario...">
+                        </div>
+
+                        <div class="campo-1">
+                            <h4> VALOR </h4>
+
+                            <input type="number" id="valor" placeholder="0,00">
+                        </div>
+
+                        <div class="campo-1">
+                            <h4> CATEGORIA </h4>
+
+                            <select>
+                                <option value="alimentacao"> Alimentação </option>
+                                <option value="transporte"> Transporte </option>
+                                <option value="moradia"> Moradia </option>
+                                <option value="lazer"> Lazer </option>
+
+                            </select>
+                        </div>
+
+                        <div class="campo-1">
+                            <h4> Data </h4>
+
+                            <input type="date" id="data">
+                        </div>
+
+                        <button class="btn-adicionar"> Adicionar </button>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
